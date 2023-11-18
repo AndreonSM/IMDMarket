@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Product Name"/>
+
+    <EditText
+        android:id="@+id/editTextProductCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextProductName"
+        android:hint="Product Code"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/editTextProductDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextProductCode"
+        android:layout_marginTop="8dp"
+        android:hint="Product Description"
+        android:inputType="textMultiLine"
+        android:lines="4"/>
+
+    <EditText
+        android:id="@+id/editTextStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextProductDescription"
+        android:layout_marginTop="8dp"
+        android:hint="Stock"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/buttonUpdateProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextStock"
+        android:layout_marginTop="16dp"
+        android:text="Update Product"/>
+
+</RelativeLayout>
